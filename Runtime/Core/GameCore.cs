@@ -9,7 +9,7 @@ using UnityEngine;
 namespace Jimothy.Systems.Core
 {
     [DefaultExecutionOrder(-1000)]
-    public class GameCore : MonoBehaviour
+    public abstract class GameCore : MonoBehaviour
     {
         [Header("References")]
         [SerializeField] private AudioManager _audioManager;
@@ -44,9 +44,12 @@ namespace Jimothy.Systems.Core
             ServiceLocator.Global.Register(_gameStateManager);
             _updatables.Add(_gameStateManager as IUpdatable);
             
-            _gameFlowController = new GameFlowController(_gameStateManager, _sceneLoader);
+            _gameFlowController = CreateGameFlowController(_gameStateManager, _sceneLoader);
             ServiceLocator.Global.Register(_gameFlowController);
         }
+
+        protected abstract IGameFlowController CreateGameFlowController(IGameStateManager gameStateManager,
+            SceneLoader sceneLoader);
 
         private void Start()
         {
