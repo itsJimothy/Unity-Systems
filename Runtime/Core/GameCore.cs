@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using Jimothy.Core;
 using Jimothy.Systems.Audio;
 using Jimothy.Systems.GameFlow;
 using Jimothy.Systems.GameState;
