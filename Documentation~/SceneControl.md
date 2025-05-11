@@ -21,5 +21,5 @@ Handles additive scene loading and unloading.
 - Scene groups can be loaded from the `SceneLoader` with the 'LoadSceneGroup' method.
     - `async Task LoadSceneGroup(int index, bool fadeOut = true)`
     - The starting scene group index can be changed on the SceneLoader game object.
-    - Scene group loading is generally handled via the `GameStateManager` through loading states.
+    - Scene group loading is generally handled via the `GameStateManager` through `LoadingState` transitions.
 - You can toggle debug statements on the `SceneLoader` game object as well as create an artificial loading delay.
