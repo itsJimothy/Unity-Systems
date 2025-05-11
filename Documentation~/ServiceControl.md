@@ -1,8 +1,12 @@
 ## Service Management
 Inversion of control via a service locator. This is a foundational system for the entire application flow.
 
+---
+
 ### External Dependencies
-- https://github.com/itsJimothy/Unity-Utilities.git
+- [Unity Utilities](https://github.com/itsJimothy/Unity-Utilities.git)
+
+---
 
 ### How to use
 - Create a ServiceLocator in one or more of the following ways:

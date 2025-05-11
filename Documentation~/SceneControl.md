@@ -1,12 +1,16 @@
 ## Scene Control
 Handles additive scene loading and unloading.
 
-### External Dependencies
-- https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1
-- https://github.com/itsJimothy/Unity-Utilities.git
+---
 
-### TODO
-- Add starting scene group index
+### External Dependencies
+- [Eflatun.SceneReference](https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1)
+- [Unity Utilities](https://github.com/itsJimothy/Unity-Utilities.git)
+
+### Internal Dependencies
+- [Core](./Core.md)
+
+---
 
 ### How to use
 - The 'Root' scene handles initialization of all your scenes.
