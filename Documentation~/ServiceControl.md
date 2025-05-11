@@ -8,7 +8,7 @@ Inversion of control via a service locator. This is a foundational system for th
 
 ---
 
-### How to use
+### Usage
 - Create a ServiceLocator in one or more of the following ways:
     - Right-click scene hierarchy -> Service Locator -> Create Global
     - Right-click scene hierarchy -> Service Locator -> Create Scene

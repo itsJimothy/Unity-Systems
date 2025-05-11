@@ -12,10 +12,9 @@ Handles additive scene loading and unloading.
 
 ---
 
-### How to use
+### Usage
 - The 'Root' scene handles initialization of all your scenes.
     - The SceneBootstrapper static class makes sure this is the only scene loaded at the start of the game to ensure proper initialization.
-    - 
 - Create a scene group from the `SceneLoader` game object and tag your scenes appropriately (e.g. 'Main Menu', 'Gameplay', 'Settings'), making sure to have exactly one 'Active Scene' in each scene group.
     - Nested under the SceneLoader game object, is the loading screen canvas. Change as you see fit.
 - `GameCore` is responsible for registering the `SceneLoader` with the `ServiceLocator`.
