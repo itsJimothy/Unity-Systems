@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Jimothy.Systems.Core;
-using Jimothy.UI.Menus;
+using Jimothy.Systems.Core.UI;
 using UnityEngine;
 
 namespace Jimothy.Systems.SceneControl

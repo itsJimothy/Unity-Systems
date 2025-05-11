@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Jimothy.UI.Menus
+namespace Jimothy.Systems.Core.UI
 {
     public class Fader : MonoBehaviour
     {

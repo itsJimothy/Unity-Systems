@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Jimothy.SceneControl;
 using UnityEngine.SceneManagement;
 
 namespace Jimothy.Systems.SceneControl

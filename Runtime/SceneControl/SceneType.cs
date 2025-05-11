@@ -1,4 +1,4 @@
-namespace Jimothy.SceneControl
+namespace Jimothy.Systems.SceneControl
 {
     public enum SceneType
     {

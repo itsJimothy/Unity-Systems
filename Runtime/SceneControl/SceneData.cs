@@ -1,6 +1,5 @@
 using System;
 using Eflatun.SceneReference;
-using Jimothy.SceneControl;
 
 namespace Jimothy.Systems.SceneControl
 {
