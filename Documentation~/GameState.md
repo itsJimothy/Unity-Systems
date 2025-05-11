@@ -8,6 +8,7 @@ Contains game state definitions and coordinates transitions between them.
 
 ### Internal Dependencies
 - [ServiceControl](./ServiceControl.md)
+- [GameFlow](./GameFlow.md)
 
 ---
 

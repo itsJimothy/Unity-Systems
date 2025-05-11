@@ -1,5 +1,3 @@
-using Jimothy.Systems.Core;
-
 namespace Jimothy.Systems.GameState
 {
     public interface IGameState

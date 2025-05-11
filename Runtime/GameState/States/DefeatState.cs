@@ -10,7 +10,6 @@ namespace Jimothy.Systems.GameState.States
         {
         }
 
-
         public override void Enter()
         {
             Time.timeScale = 0f;
