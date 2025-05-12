@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "displayName": "jUnitySystems",
   "description": "Game agnostic systems code for Unity projects.",
-  "unity": "6000.0.0",
+  "unity": "6000.0",
   "dependencies": {
     "com.eflatun.scenereference": "git+https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1",
-    "io.jimothy.unityutilities": "git+https://github.com/itsJimothy/Unity-Utilities.git#^1.7.0"
+    "io.jimothy.junityutilities": "git+https://github.com/itsJimothy/Unity-Utilities.git#^1.7.0"
+  },
+  "documentationUrl": "https://github.com/itsJimothy/Unity-Systems/blob/main/Documentation~/index.md",
+  "author": {
+    "name": "Jimothy",
+    "url": "https://www.jimothy.io"
   }
 }
