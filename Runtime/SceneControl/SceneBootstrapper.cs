@@ -9,7 +9,7 @@ namespace Jimothy.Systems.SceneControl
         private static void Init()
         {
             Debug.Log("Bootstrapping...");
-            SceneManager.LoadSceneAsync("Bootstrapper", LoadSceneMode.Single);
+            SceneManager.LoadSceneAsync("Root", LoadSceneMode.Single);
         }
     }
 }
