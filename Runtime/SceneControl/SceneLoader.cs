@@ -17,6 +17,7 @@ namespace Jimothy.Systems.SceneControl
         [SerializeField] private float _artificialLoadingDelay = 2f;
 
         [Header("Scene Groups")]
+        [SerializeField] private int _startingSceneGroupIndex = 0;
         [SerializeField] private SceneGroup[] _sceneGroups;
 
         public int CurrentSceneGroupIndex { get; private set; }
@@ -29,6 +30,8 @@ namespace Jimothy.Systems.SceneControl
         private Fader _fader;
 
         public readonly SceneGroupManager Manager = new();
+        
+        public int StartingSceneGroupIndex => _startingSceneGroupIndex;
 
         public void Init()
         {
