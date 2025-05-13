@@ -19,6 +19,10 @@ namespace Jimothy.Systems.Core
 
         private IGameStateManager _gameStateManager;
         private IGameFlowController _gameFlowController;
+        
+        protected IGameFlowController GameFlowController => _gameFlowController;
+        protected IGameStateManager GameStateManager => _gameStateManager;
+        protected SceneLoader SceneLoader => _sceneLoader;
 
         private void Awake()
         {
