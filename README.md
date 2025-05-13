@@ -30,6 +30,19 @@ Or import via Unity Package Manager with the following URL:
 
 ---
 
+### Samples
+This package includes a demo that demonstrates additive scene loading and service registration with a root scene.
+
+To import the sample:
+1. Open **Package Manager** → `jUnitySystems`.
+2. Scroll to the **Samples** section.
+3. Click **Import into Project**.
+
+The sample will be available at:
+`Assets/Samples/jUnitySystems/<version>/DemoSceneSetup`
+
+---
+
 ### Dependencies
 
 - [Eflatun.SceneReference](https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1)

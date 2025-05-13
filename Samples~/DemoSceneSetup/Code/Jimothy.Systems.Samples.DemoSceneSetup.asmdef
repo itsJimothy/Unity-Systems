@@ -1,0 +1,16 @@
+{
+    "name": "Jimothy.Systems.Samples.DemoSceneSetup",
+    "rootNamespace": "Jimothy.Systems.Samples.DemoSceneSetup",
+    "references": [
+        "GUID:4af76c83ed0a54511986bf069aaf96cc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

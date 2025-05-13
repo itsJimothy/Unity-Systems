@@ -9,6 +9,13 @@
     "io.jimothy.junityutilities": "git+https://github.com/itsJimothy/Unity-Utilities.git"
   },
   "documentationUrl": "https://github.com/itsJimothy/Unity-Systems/blob/main/Documentation~/index.md",
+  "samples": [
+    {
+      "displayName": "Scene Setup Demo",
+      "description": "Demonstrates how to set up a root scene for additive scene loading.",
+      "path": "Samples~/DemoSceneSetup"
+    }
+  ],
   "author": {
     "name": "Jimothy",
     "url": "https://www.jimothy.io"
