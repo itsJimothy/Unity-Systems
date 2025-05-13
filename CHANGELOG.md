@@ -2,6 +2,13 @@
 
 ---
 
+## [1.1.0] - 2025-05-13
+### Adds demo sample under the Samples tab
+- Adds:
+  - Scene Setup Demo
+
+---
+
 ## [1.0.0] - 2025-05-12
 ### Initial Release
 - Includes:

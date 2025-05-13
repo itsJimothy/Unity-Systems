@@ -28,27 +28,38 @@ Add the following to your `manifest.json`:
 Or import via Unity Package Manager with the following URL:
 `https://github.com/itsJimothy/Unity-Systems.git`
 
----
+#### IMPORTANT
+This package has two GitHub dependencies. Unity packages are not allowed to specify GitHub dependencies in `package.json`. (Unity projects can specify GitHub dependencies in `manifest.json` which Unity packages don't have. [See relevant documentation](https://docs.unity3d.com/6000.0/Documentation/Manual/upm-git.html). I know it sounds dumb, and it's really annoying but here we are.)
 
-### Samples
-This package includes a demo that demonstrates additive scene loading and service registration with a root scene.
-
-To import the sample:
-1. Open **Package Manager** → `jUnitySystems`.
-2. Scroll to the **Samples** section.
-3. Click **Import into Project**.
-
-The sample will be available at:
-`Assets/Samples/jUnitySystems/<version>/DemoSceneSetup`
+See installation links to the dependencies below.
 
 ---
 
 ### Dependencies
 
 - [Eflatun.SceneReference](https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1)
-  - Scene reference serialization.
+    - Scene reference serialization.
+    - Git installation url: `https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1`
 - [jUnityUtilities](https://github.com/itsJimothy/Unity-Utilities.git)
-  - Various utilities.
+    - Various utilities.
+    - Git installation url: `https://github.com/itsJimothy/Unity-Utilities.git`
+
+---
+
+### Samples
+This package includes a demo that demonstrates additive scene loading and service registration with a root scene.
+
+#### To import the sample
+1. Open Package Manager -> **jUnitySystems**.
+2. Select the to the **Samples** tab.
+3. Select **Import** on the **Scene Setup Demo**.
+
+The demo will be available at:
+`Assets/Samples/jUnitySystems/<version>/DemoSceneSetup`
+
+#### Note
+
+The `DemoRoot` scene is for display purposes only. It shows the correct (read: intended) way to set up the root scene to follow this package's intended application flow.
 
 ---
 
