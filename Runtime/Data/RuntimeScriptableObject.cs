@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Jimothy.Systems._Project.Code.Systems.Runtime.Data
+namespace Jimothy.Systems.Systems.Data
 {
     public abstract class RuntimeScriptableObject : ScriptableObject
     {
