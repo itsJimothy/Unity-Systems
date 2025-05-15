@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Jimothy.Systems.GameState.Scene
 {
-    public abstract class SceneFlowController : MonoBehaviour, IGameStateObserver
+    public abstract class MainSceneFlowController : MonoBehaviour, IGameStateObserver
     {
         protected IGameFlowController GameFlowController;
         private IGameStateManager _gameStateManager;
