@@ -5,11 +5,11 @@ namespace Jimothy.Systems.SceneControl
 {
     public static class SceneBootstrapper
     {
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
         private static void Init()
         {
             Debug.Log("Bootstrapping...");
-            SceneManager.LoadSceneAsync("Root", LoadSceneMode.Single);
+            SceneManager.LoadScene("Root", LoadSceneMode.Single);
         }
     }
 }

@@ -9,12 +9,12 @@ namespace Jimothy.Systems.GameState.Scene
 
         protected virtual void Awake()
         {
-            ServiceLocator.Global.Get(out GameStateManager);
+            ServiceLocator.Global?.Get(out GameStateManager);
         }
 
         protected virtual void Start()
         {
-            GameStateManager.RequestStateChange(CreateState());
+            GameStateManager?.RequestStateChange(CreateState());
         }
 
         protected abstract IGameState CreateState();
