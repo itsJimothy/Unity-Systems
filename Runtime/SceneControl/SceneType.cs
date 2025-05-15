@@ -2,7 +2,7 @@ namespace Jimothy.Systems.SceneControl
 {
     public enum SceneType
     {
-        ActiveScene,
+        Main,
         Gameplay,
         HUD,
         UI,

@@ -49,12 +49,12 @@ namespace Jimothy.Systems.SceneControl
                 await Task.Delay(100);
             }
 
-            Scene activeScene =
+            Scene mainScene =
                 SceneManager.GetSceneByName(
-                    _activeSceneGroup.FindSceneNameByType(SceneType.ActiveScene));
-            if (activeScene.IsValid())
+                    _activeSceneGroup.FindSceneNameByType(SceneType.Main));
+            if (mainScene.IsValid())
             {
-                SceneManager.SetActiveScene(activeScene);
+                SceneManager.SetActiveScene(mainScene);
             }
 
             OnSceneGroupLoaded.Invoke();
