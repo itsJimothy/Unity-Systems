@@ -10,16 +10,16 @@ namespace Jimothy.Systems.Audio.Music.Ovani
         [SerializeField] protected int DefaultIntensity = 0;
 
         private OvaniMusicManager _musicManager;
-        private GameStateManager _gameStateManager;
+        private IGameStateManager _gameStateManager;
 
-        protected GameStateManager GameStateManager => _gameStateManager;
+        protected IGameStateManager GameStateManager => _gameStateManager;
 
         public int CurrentIntensity => _musicManager.CurrentIntensityIndex;
 
         private void Awake()
         {
-            ServiceLocator.Global.Get(out _musicManager);
-            ServiceLocator.Global.Get(out _gameStateManager);
+            ServiceLocator.Global?.Get(out _musicManager);
+            ServiceLocator.Global?.Get(out _gameStateManager);
         }
 
         private void OnDestroy()
