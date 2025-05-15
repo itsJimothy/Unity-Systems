@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Jimothy.Systems.GameState.Scene
 {
-    public abstract class ActiveSceneInitializer : MonoBehaviour
+    public abstract class MainSceneInitializer : MonoBehaviour
     {
         protected IGameStateManager GameStateManager;
 

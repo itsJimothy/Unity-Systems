@@ -1,4 +1,6 @@
 ## [Unreleased]
+- Create `SceneGroup` scriptable object.
+- Change `SceneType.ActiveScene` to `SceneType.Main`.
 
 ---
 

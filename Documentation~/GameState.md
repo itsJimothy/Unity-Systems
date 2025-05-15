@@ -14,8 +14,8 @@ Contains game state definitions and coordinates transitions between them.
 ---
 
 ### Usage
-- `ActiveSceneInitializer` is an abstract `MonoBehaviour` whose concrete implementation should implement `IGameState CreateState()`. This makes sure that every scene group transition results in the appropriate state transition. It should sit on a game object in a scene group's active scene; typically alongside that scene's `SceneFlowController`.
-- `SceneFlowController` is another abstract `MonoBehaviour` that should sit in a scene group's active scene. It contains a reference to the `GameFlowController` via the `ServiceLocator` and is responsible for implementing the scene group's game flow logic via the `GameFlowController`.
+- `MainSceneInitializer` is an abstract `MonoBehaviour` whose concrete implementation should implement `IGameState CreateState()`. This makes sure that every scene group transition results in the appropriate state transition. It should sit on a game object in a scene group's main scene; typically alongside that scene's `SceneFlowController`.
+- `SceneFlowController` is another abstract `MonoBehaviour` that should sit in a scene group's main scene. It contains a reference to the `GameFlowController` via the `ServiceLocator` and is responsible for implementing the scene group's game flow logic via the `GameFlowController`.
   - Typically, you'd subscribe to events within the `SceneFlowController` to control the game flow based on gameplay events.
   - `SceneFlowController` "implements" `IGameStateObserver` in the sense that it declares the abstract method `OnStateChanged` and subscribes to the `GameStateManager`'s `StateChanged` event.
     - The actual `OnStateChanged` implementation in the concrete class is where you react to state changes with the `SceneFlowController`.

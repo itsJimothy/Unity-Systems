@@ -33,7 +33,7 @@ Sound and music management.
     - `OvaniMusicManager` specifically plays `Ovani` music tracks. These tracks are different in the sense that they contain varying intensities. The `OvaniMusicManager` can switch between those intensities seamlessly due to how `Ovani` music tracks are structured.
       - `OvaniMusicManager` takes `OvaniSongData` Scriptable Objects which implement the `ISongData` interface. This is currently the only concrete `ISongData` implementation.
     - `OvaniMusicManager` lives in the `Root` scene, nested under `AudioManager` and handles actually playing the music tracks.
-    - `OvaniMusicController` is an abstract class that implements the `IMusicController` interface. Each active scene should have a concrete `OvaniMusicController` which handles the scene's music logic.
+    - `OvaniMusicController` is an abstract class that implements the `IMusicController` interface. Each main scene should have a concrete `OvaniMusicController` which handles the scene's music logic.
 - `AudioListenerFollower` and `AudioListenerPauseHandler` are components that should be placed on a game object in the root scene.
   - `AudioListenerFollower` registers itself with the `ServiceLocator`. The `Player` should fetch a reference to it and set itself as the follow target via `SetFollowTarget(Transform target)`.
     - The audio listener game object sits in the root scene in order to prevent audio issues while loading and transitioning between scene groups.
