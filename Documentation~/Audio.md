@@ -16,6 +16,10 @@ Sound and music management.
 ### Usage
 - `AudioPreferences` handles saving and loading audio settings.
 - `AudioManager` instantiates `AudioPreferences` and registers it - along with the serialized `SoundManager` and `OvaniMusicManager` - with the `ServiceLocator`.
+- Expects an `AudioMixerGroup` with exposed volume parameters by the following names:
+  - `Master`
+  - `Sound`
+  - `Music`
 - `SoundManager` handles playing and object pooling of sound effects.
   - `SoundData` is a ScriptableObject that contains the audio clip, mixer group, and settings for a sound effect.
   - `SoundManager` plays sound effects using the `CreateSound()` method which returns a `SoundBuilder` object. You can chain configuration methods onto to the returned `SoundBuilder` object to configure the sound effect, finishing the chain with a call to `Play()`.
