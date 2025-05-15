@@ -1,6 +1,15 @@
 ## [Unreleased]
-- Create `SceneGroup` scriptable object.
-- Change `SceneType.ActiveScene` to `SceneType.Main`.
+
+---
+
+## [2.0.0] - 2025-05-15
+### Use scriptable objects for scene groups
+- Created:
+  - `SceneGroup` scriptable object
+- Changed:
+  - `SceneType.ActiveScene` -> `SceneType.Main`
+  - `ActiveSceneInitializer` -> `MainSceneInitializer`
+  - `SceneFlowController` -> `MainSceneFlowController`
 
 ---
 
@@ -27,7 +36,7 @@
 ## [1.1.0] - 2025-05-13
 ### Adds demo sample under the Samples tab
 - Added:
-  - Scene Setup Demo
+  - Scene setup demo
 
 ---
 
