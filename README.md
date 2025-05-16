@@ -9,6 +9,7 @@ This package contains a set of systems that serve as a game-agnostic foundation 
 
 - [Audio](./Audio.md): Sound and music management.
 - [Core](./Core.md): Foundational elements for initializing and running the application.
+- [Data](./Data.md): Runtime data management.
 - [Debugging](./Debugging.md): Debugging utilities.
 - [EventChannels](./EventChannels.md): Allows for decoupled cross-scene communications via Scriptable Object based event channels.
 - [GameFlow](./GameFlow.md): Controls game flow via game state transitions.
