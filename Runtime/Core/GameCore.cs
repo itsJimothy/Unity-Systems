@@ -24,7 +24,7 @@ namespace Jimothy.Systems.Core
         protected IGameStateManager GameStateManager => _gameStateManager;
         protected SceneLoader SceneLoader => _sceneLoader;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             if (_audioManager == null)
             {
@@ -55,7 +55,7 @@ namespace Jimothy.Systems.Core
         protected abstract IGameFlowController CreateGameFlowController(IGameStateManager gameStateManager,
             SceneLoader sceneLoader);
 
-        private void Start()
+        protected virtual void Start()
         {
             _gameFlowController.StartGame();
         }
