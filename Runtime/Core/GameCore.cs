@@ -57,7 +57,7 @@ namespace Jimothy.Systems.Core
 
         protected virtual void Start()
         {
-            _gameFlowController.StartGame();
+            _gameFlowController.Init();
         }
 
         private void Update()

@@ -19,11 +19,13 @@ namespace Jimothy.Systems.SceneControl
         [Header("Scene Groups")]
         [SerializeField] private int _startingSceneGroupIndex = 0;
         [SerializeField] private int _mainMenuSceneGroupIndex = 0;
+        [SerializeField] private int _firstGameSceneGroupIndex = 0;
         [SerializeField] private SceneGroup[] _sceneGroups;
 
         public int CurrentSceneGroupIndex { get; private set; }
 
         public int MainMenuSceneGroupIndex => _mainMenuSceneGroupIndex;
+        public int FirstGameSceneGroupIndex => _firstGameSceneGroupIndex;
 
         private float _loadingProgress;
         private bool _isLoading;

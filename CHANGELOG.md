@@ -1,6 +1,9 @@
 ## [Unreleased]
 - Make `Start` and `Awake` in `GameCore` virtual.
-- Serialize `MainMenuSceneGroupIndex` in `SceneLoader`.
+- Improve scene flow:
+  - Serialize `MainMenuSceneGroupIndex` in `SceneLoader`.
+  - Serialize `FirstGameSceneGroupIndex` in `SceneLoader`.
+  - 
 ---
 
 ## [2.0.0] - 2025-05-15
