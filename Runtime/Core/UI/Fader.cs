@@ -22,7 +22,7 @@ namespace Jimothy.Systems.Core.UI
             float startAlpha = _image.color.a;
             float elapsedTime = 0f;
 
-            while (Mathf.Abs(targetAlpha - startAlpha) < 0.001f && elapsedTime < duration)
+            while (Mathf.Abs(targetAlpha - startAlpha) > 0.001f && elapsedTime < duration)
             {
                 elapsedTime += Time.unscaledDeltaTime;
                 float alpha = Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / duration);
