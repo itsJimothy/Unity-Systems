@@ -1,6 +1,10 @@
 ## [Unreleased]
-- Make `Start` and `Awake` in `GameCore` virtual.
-- Improve scene flow:
+---
+
+[2.1.0] - 2025-05-23
+### Improve scene flow
+- Changed:
+  - Make `Start` and `Awake` in `GameCore` virtual.
   - Serialize `MainMenuSceneGroupIndex` in `SceneLoader`.
   - Serialize `FirstGameSceneGroupIndex` in `SceneLoader`.
   - Default to fading out before loading the next scene group.
@@ -8,8 +12,8 @@
 ---
 
 ## [2.0.0] - 2025-05-15
-### Use scriptable objects for scene groups
-- Created:
+### Adds scriptable objects for scene groups
+- Added:
   - `SceneGroup` scriptable object
 - Changed:
   - `SceneType.ActiveScene` -> `SceneType.Main`
