@@ -33,7 +33,11 @@ namespace Jimothy.Systems.Core.UI
             _image.color = new Color(_image.color.r, _image.color.g, _image.color.b, targetAlpha);
         }
 
+        public async Task FadeOut(float duration) => await FadeTo(_maxAlpha, duration);
+
         public async Task FadeOut() => await FadeTo(_maxAlpha, _fadeOutDuration);
+
+        public async Task FadeIn(float duration) => await FadeTo(0f, duration);
 
         public async Task FadeIn() => await FadeTo(0f, _fadeInDuration);
     }

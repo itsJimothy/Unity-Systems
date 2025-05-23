@@ -12,14 +12,13 @@ namespace Jimothy.Systems.GameState.States
 
         public override GameStateType Type => GameStateType.Loading;
 
-        public LoadingState(IGameStateManager gameStateManager, SceneLoader sceneLoader, int sceneGroupIndexToLoad, bool fadeOut = false) :
+        public LoadingState(IGameStateManager gameStateManager, SceneLoader sceneLoader, int sceneGroupIndexToLoad, bool fadeOut = true) :
             base(gameStateManager)
         {
             _sceneLoader = sceneLoader;
             _sceneGroupIndexToLoad = sceneGroupIndexToLoad;
             _fadeOut = fadeOut;
         }
-
 
         public override void Enter()
         {

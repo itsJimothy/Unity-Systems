@@ -3,7 +3,8 @@
 - Improve scene flow:
   - Serialize `MainMenuSceneGroupIndex` in `SceneLoader`.
   - Serialize `FirstGameSceneGroupIndex` in `SceneLoader`.
-  - 
+  - Default to fading out before loading the next scene group.
+
 ---
 
 ## [2.0.0] - 2025-05-15

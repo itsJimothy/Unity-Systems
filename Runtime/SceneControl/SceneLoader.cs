@@ -22,6 +22,9 @@ namespace Jimothy.Systems.SceneControl
         [SerializeField] private int _firstGameSceneGroupIndex = 0;
         [SerializeField] private SceneGroup[] _sceneGroups;
 
+        [Header("Settings")]
+        [SerializeField] private float _loadingFadeOutDuration = 0.2f;
+
         public int CurrentSceneGroupIndex { get; private set; }
 
         public int MainMenuSceneGroupIndex => _mainMenuSceneGroupIndex;
@@ -70,7 +73,7 @@ namespace Jimothy.Systems.SceneControl
             LoadingProgress progress = new();
             progress.Progressed += value => _loadingProgress = value;
 
-            if (fadeOut) await _fader.FadeOut();
+            if (fadeOut) await _fader.FadeOut(_loadingFadeOutDuration);
             EnableLoadingCanvas();
             CurrentSceneGroupIndex = index;
 
