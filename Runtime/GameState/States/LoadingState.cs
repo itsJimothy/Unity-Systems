@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Jimothy.Systems.SceneControl;
 using Jimothy.Systems.ServiceControl;
 using UnityEngine;
@@ -23,7 +24,7 @@ namespace Jimothy.Systems.GameState.States
         public override void Enter()
         {
             Time.timeScale = 0f;
-            _ = _sceneLoader.LoadSceneGroup(_sceneGroupIndexToLoad, _fadeOut);
+            _ = AwaitSceneLoad();
         }
 
         public override void Update()
@@ -32,6 +33,11 @@ namespace Jimothy.Systems.GameState.States
 
         public override void Exit()
         {
+        }
+
+        private async Task AwaitSceneLoad()
+        {
+            await _sceneLoader.LoadSceneGroup(_sceneGroupIndexToLoad, _fadeOut);
         }
     }
 }
