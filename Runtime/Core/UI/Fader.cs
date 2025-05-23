@@ -7,7 +7,7 @@ namespace Jimothy.Systems.Core.UI
     public class Fader : MonoBehaviour
     {
         [SerializeField] private float _maxAlpha = 1f;
-        [SerializeField] private float _fadeInDuration = 0.1f;
+        [SerializeField] private float _fadeInDuration = 0.5f;
         [SerializeField] private float _fadeOutDuration = 0.5f;
 
         private Image _image;
