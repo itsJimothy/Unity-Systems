@@ -16,7 +16,7 @@ namespace Jimothy.Systems.GameState.Scene
             ServiceLocator.Global?.Get(out _gameStateManager);
         }
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             if (_gameStateManager != null)
             {
@@ -24,7 +24,7 @@ namespace Jimothy.Systems.GameState.Scene
             }
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             if (_gameStateManager != null)
             {
