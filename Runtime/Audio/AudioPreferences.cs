@@ -18,18 +18,18 @@ namespace Jimothy.Systems.Audio
 
         public void Init()
         {
-            SetMasterVolume(PlayerPrefs.GetFloat("MasterVolume", 1f));
-            SetSoundVolume(PlayerPrefs.GetFloat("SoundVolume", 1f));
-            SetMusicVolume(PlayerPrefs.GetFloat("MusicVolume", 1f));
+            SetMasterVolume(PlayerPrefs.GetFloat("MasterVolume", 0.5f));
+            SetSoundVolume(PlayerPrefs.GetFloat("SoundVolume", 0.5f));
+            SetMusicVolume(PlayerPrefs.GetFloat("MusicVolume", 0.5f));
         }
 
         public void Reset()
         {
-            if (_debug) Debug.Log("Setting all volumes to 1.");
+            if (_debug) Debug.Log("Setting all volumes to 0.5.");
             
-            PlayerPrefs.SetFloat("MasterVolume", 1f);
-            PlayerPrefs.SetFloat("SoundVolume", 1f);
-            PlayerPrefs.SetFloat("MusicVolume", 1f);
+            PlayerPrefs.SetFloat("MasterVolume", 0.5f);
+            PlayerPrefs.SetFloat("SoundVolume", 0.5f);
+            PlayerPrefs.SetFloat("MusicVolume", 0.5f);
             Init();
         }
 
