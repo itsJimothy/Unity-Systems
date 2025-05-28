@@ -1,6 +1,7 @@
 ## [Unreleased]
 - Add cursor state method to `MainSceneFlowController`.
 - Make OnEnable and OnDisable protected in `MainSceneFlowController`.
+- Add quit game method to `IGameFlowController`.
 
 ---
 
