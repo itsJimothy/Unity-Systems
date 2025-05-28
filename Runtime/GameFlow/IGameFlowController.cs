@@ -6,6 +6,7 @@ namespace Jimothy.Systems.GameFlow
     {
         void Init();
         void StartGame();
+        void QuitGame();
         void EnterMainMenu();
         void RestartLevel();
         void LoadNextLevel();
