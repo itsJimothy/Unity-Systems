@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Jimothy.Systems.SceneControl
 {
-    [CreateAssetMenu(fileName = "SceneGroup", menuName = "Jimothy/Scenes/Scene Group")]
+    [CreateAssetMenu(fileName = "SceneGroup", menuName = "Jimothy/Scene Control/Scene Group")]
     public class SceneGroup : ScriptableObject
     {
         public string GroupName = "New Scene Group";

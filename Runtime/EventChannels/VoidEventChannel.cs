@@ -6,7 +6,7 @@ namespace Jimothy.Systems.EventChannels
     {
     }
 
-    [CreateAssetMenu(menuName = "Event Channels/Void Event Channel")]
+    [CreateAssetMenu(menuName = "Jimothy/Event Channels/Void Event Channel")]
     public class VoidEventChannel : EventChannel<Empty>
     {
         public void Invoke()

@@ -1,8 +1,9 @@
+using Jimothy.Systems.Systems.Data;
 using UnityEngine;
 
-namespace Jimothy.Systems.Systems.Data.Variables
+namespace Jimothy.Systems.Data.Variables
 {
-    [CreateAssetMenu(menuName = "Runtime Variables/String Variable", fileName = "StringVariable")]
+    [CreateAssetMenu(menuName = "Jimothy/Runtime Variables/String Variable", fileName = "StringVariable")]
     public class StringVariable : RuntimeVariable<string>
     {
     }
