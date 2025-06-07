@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Jimothy.Systems.Audio.Music.Ovani
 {
-    [CreateAssetMenu(fileName = "Song", menuName = "jSystems/Audio/OvaniSongData")]
+    [CreateAssetMenu(fileName = "Song", menuName = "jSystems/Audio/Ovani Song Data")]
     public class OvaniSongData : ScriptableObject, ISongData
     {
         public float ReverbTrail = 0f;
