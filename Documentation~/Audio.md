@@ -22,6 +22,7 @@ Sound and music management.
   - `Music`
 - `SoundManager` handles playing and object pooling of sound effects.
   - `SoundData` is a ScriptableObject that contains the audio clip, mixer group, and settings for a sound effect.
+      - Right-click in the project hierarchy -> Create -> jSystems -> Audio -> SoundData.
   - `SoundManager` plays sound effects using the `CreateSound()` method which returns a `SoundBuilder` object. You can chain configuration methods onto to the returned `SoundBuilder` object to configure the sound effect, finishing the chain with a call to `Play()`.
     - These are the currently chainable `SoundBuilder` configuration methods:
       - `WithSoundData(SoundData soundData)`
@@ -32,6 +33,7 @@ Sound and music management.
   - NOTE: The only current concrete `IMusicManager` implementation is `OvaniMusicManager` inside the nested `Ovani` namespace.
     - `OvaniMusicManager` specifically plays `Ovani` music tracks. These tracks are different in the sense that they contain varying intensities. The `OvaniMusicManager` can switch between those intensities seamlessly due to how `Ovani` music tracks are structured.
       - `OvaniMusicManager` takes `OvaniSongData` Scriptable Objects which implement the `ISongData` interface. This is currently the only concrete `ISongData` implementation.
+        - Right-click in the project hierarchy -> Create -> jSystems -> Audio -> Ovani Song Data.
     - `OvaniMusicManager` lives in the `Root` scene, nested under `AudioManager` and handles actually playing the music tracks.
     - `OvaniMusicController` is an abstract class that implements the `IMusicController` interface. Each main scene should have a concrete `OvaniMusicController` which handles the scene's music logic.
 - `AudioListenerFollower` and `AudioListenerPauseHandler` are components that should be placed on a game object in the root scene.

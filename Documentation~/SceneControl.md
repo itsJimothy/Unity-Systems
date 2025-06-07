@@ -15,7 +15,7 @@ Handles additive scene loading and unloading.
 ### Usage
 - The `Root` scene handles initialization of all your scenes.
     - The SceneBootstrapper static class makes sure this is the only scene loaded at the start of the game to ensure proper initialization.
-- `SceneGroup` (Create -> Jimothy -> Scenes -> Scene Group) is a scriptable object that contains scene information for one or more scenes intended to be loaded together, additively.
+- `SceneGroup` is a scriptable object (right-click in the project hierarchy -> Create -> jSystems -> Scene Control -> Scene Group) that contains scene information for one or more scenes intended to be loaded together, additively.
   - Make sure to specify each scene's `SceneType` in the inspector.
     - Each `SceneGroup` must contain one - and exactly one - `SceneType.Main` scene. This scene gets set as the "active" scene.
 - `SceneLoader` sits in the `Root` scene. It contains of `List<SceneGroup>` and loads them on demand.

@@ -22,7 +22,7 @@ Allows for decoupled cross-scene communications via Scriptable Object based even
 ---
 
 ### Usage
-- Create an EventChannel Scriptable Object by right-clicking in the project hierarchy -> Create -> Event Channels -> [Type] Event Channel.
+- Create an EventChannel Scriptable Object by right-clicking in the project hierarchy -> Create -> jSystems -> Event Channels -> [Type] Event Channel.
 - Add an EventListener component to a GameObject.
 - Assign the EventChannel SO to the EventListener.
 - Set up the Unity Event that should be invoked when the event is raised.
