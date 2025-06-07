@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Jimothy.Systems.Data.Variables
 {
-    [CreateAssetMenu(menuName = "Jimothy/Runtime Variables/Int Variable", fileName = "IntVariable")]
+    [CreateAssetMenu(menuName = "jSystems/Runtime Variables/Int Variable", fileName = "IntVariable")]
     public class IntVariable : RuntimeVariable<int>
     {
     }

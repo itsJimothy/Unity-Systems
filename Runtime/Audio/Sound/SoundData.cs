@@ -3,7 +3,7 @@ using UnityEngine.Audio;
 
 namespace Jimothy.Systems.Audio.Sound
 {
-    [CreateAssetMenu(fileName = "", menuName = "Jimothy/Audio/SoundData")]
+    [CreateAssetMenu(fileName = "", menuName = "jSystems/Audio/SoundData")]
     public class SoundData : ScriptableObject
     {
         public AudioClip Clip;
