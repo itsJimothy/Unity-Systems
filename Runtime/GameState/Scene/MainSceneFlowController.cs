@@ -31,7 +31,7 @@ namespace Jimothy.Systems.GameState.Scene
                 _gameStateManager.StateChanged -= OnStateChanged;
             }
         }
-        
+
         protected void SetCursorState(CursorLockMode lockMode, bool visible)
         {
             Cursor.lockState = lockMode;

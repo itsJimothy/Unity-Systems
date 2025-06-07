@@ -43,9 +43,9 @@ namespace Jimothy.Systems.Audio.Music.Ovani
         public int CurrentIntensityIndex => _currentIntensityIndex;
 
         public int CurrentSongIndex => _currentSongIndex;
-        
+
         public int SongCount => _songs.Count;
-        
+
         public List<OvaniSongStruct> SongStructs => _songStructs;
 
         public void Init()

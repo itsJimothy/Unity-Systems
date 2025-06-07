@@ -14,12 +14,12 @@ namespace Jimothy.Systems.EventChannels
                 observer.Raise(value);
             }
         }
-    
+
         public void Register(EventListener<T> observer)
         {
             _observers.Add(observer);
         }
-    
+
         public void Deregister(EventListener<T> observer)
         {
             _observers.Remove(observer);

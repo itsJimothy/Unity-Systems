@@ -19,7 +19,7 @@ namespace Jimothy.Systems.Core
 
         private IGameStateManager _gameStateManager;
         private IGameFlowController _gameFlowController;
-        
+
         protected IGameFlowController GameFlowController => _gameFlowController;
         protected IGameStateManager GameStateManager => _gameStateManager;
         protected SceneLoader SceneLoader => _sceneLoader;
@@ -47,7 +47,7 @@ namespace Jimothy.Systems.Core
             _gameStateManager = new GameStateManager();
             ServiceLocator.Global.Register(_gameStateManager);
             _updatables.Add(_gameStateManager as IUpdatable);
-            
+
             _gameFlowController = CreateGameFlowController(_gameStateManager, _sceneLoader);
             ServiceLocator.Global.Register(_gameFlowController);
         }

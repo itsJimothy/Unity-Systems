@@ -23,7 +23,7 @@ namespace Jimothy.Systems.Audio
         {
             _gameStateManager.StateChanged -= OnStateChanged;
         }
-        
+
         public void OnStateChanged(GameStateType previous, GameStateType next)
         {
             switch (next)

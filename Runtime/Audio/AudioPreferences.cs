@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 namespace Jimothy.Systems.Audio
 {
-    public class AudioPreferences: IInitializable
+    public class AudioPreferences : IInitializable
     {
         private readonly AudioMixer _audioMixer;
         private readonly bool _debug;
@@ -26,7 +26,7 @@ namespace Jimothy.Systems.Audio
         public void Reset()
         {
             if (_debug) Debug.Log("Setting all volumes to 0.5.");
-            
+
             PlayerPrefs.SetFloat("MasterVolume", 0.5f);
             PlayerPrefs.SetFloat("SoundVolume", 0.5f);
             PlayerPrefs.SetFloat("MusicVolume", 0.5f);
@@ -51,7 +51,7 @@ namespace Jimothy.Systems.Audio
         public void SetMasterVolume(float volume)
         {
             if (_debug) Debug.Log("Setting master volume to: " + volume);
-            
+
             _audioMixer.SetFloat("Master", volume.SliderToLogarithmicVolume());
             PlayerPrefs.SetFloat("MasterVolume", volume);
         }
@@ -59,7 +59,7 @@ namespace Jimothy.Systems.Audio
         public void SetSoundVolume(float volume)
         {
             if (_debug) Debug.Log("Setting sound volume to: " + volume);
-            
+
             _audioMixer.SetFloat("Sound", volume.SliderToLogarithmicVolume());
             PlayerPrefs.SetFloat("SoundVolume", volume);
         }
@@ -67,7 +67,7 @@ namespace Jimothy.Systems.Audio
         public void SetMusicVolume(float volume)
         {
             if (_debug) Debug.Log("Setting music volume to: " + volume);
-            
+
             _audioMixer.SetFloat("Music", volume.SliderToLogarithmicVolume());
             PlayerPrefs.SetFloat("MusicVolume", volume);
         }

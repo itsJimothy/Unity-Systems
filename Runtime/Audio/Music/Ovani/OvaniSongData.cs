@@ -7,7 +7,7 @@ namespace Jimothy.Systems.Audio.Music.Ovani
     public class OvaniSongData : ScriptableObject, ISongData
     {
         public float ReverbTrail = 0f;
-        
+
         [SerializeField] private List<AudioClip> _intensityClips = new();
 
         public List<AudioClip> IntensityClips => _intensityClips;

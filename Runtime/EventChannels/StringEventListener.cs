@@ -1,4 +1,6 @@
 namespace Jimothy.Systems.EventChannels
 {
-    public class StringEventListener : EventListener<string> {}
+    public class StringEventListener : EventListener<string>
+    {
+    }
 }

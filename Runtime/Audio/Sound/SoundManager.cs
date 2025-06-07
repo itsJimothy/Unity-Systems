@@ -10,7 +10,7 @@ namespace Jimothy.Systems.Audio.Sound
         private IObjectPool<SoundEmitter> _soundEmitterPool;
         private readonly List<SoundEmitter> _activeSoundEmitters = new();
         public readonly Dictionary<SoundData, int> Counts = new();
-        
+
         [SerializeField] private SoundEmitter _soundEmitterPrefab;
         [SerializeField] private bool _collectionCheck = true;
         [SerializeField] private int _defaultCapacity = 10;

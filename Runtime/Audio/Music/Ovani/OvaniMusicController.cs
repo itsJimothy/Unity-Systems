@@ -26,7 +26,7 @@ namespace Jimothy.Systems.Audio.Music.Ovani
         {
             StopAllCoroutines();
         }
-        
+
         public void Play(int songIndex) => Play(songIndex, DefaultIntensity);
 
         public void Play(int songIndex, int intensity) => _musicManager.PlaySong(songIndex, intensity);
