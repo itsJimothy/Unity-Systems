@@ -1,14 +1,19 @@
 ## [Unreleased]
+
+---
+
+[2.2.0] - 2025-06-14
+### Adds scene flow features, organizes context menu items, and adjusts default audio settings
 - Add cursor state method to `MainSceneFlowController`.
 - Make OnEnable and OnDisable protected in `MainSceneFlowController`.
 - Add quit game method to `IGameFlowController`.
 - Change default audio settings values to a more sensible 0.5.
-- Clean up context menu items.
+- Organize context menu items.
 
 ---
 
 [2.1.0] - 2025-05-23
-### Improve scene flow
+### Improves scene flow
 - Changed:
   - Make `Start` and `Awake` in `GameCore` virtual.
   - Serialize `MainMenuSceneGroupIndex` in `SceneLoader`.
